@@ -1,0 +1,17 @@
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat($grid-columns-desktop, (100% - (($grid-columns-desktop - 1) * $column-gap)) / $grid-columns-desktop);
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    @include button-styles;
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: $mobile-container-max-width;
+    }
+
+    .products {
+        grid-template-columns: repeat($grid-columns-tablet, (100% - (($grid-columns-tablet - 1) * $column-gap)) / $grid-columns-tablet);
+        column-gap: $column-gap * 3;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: $product-item-margin-mobile;
+    }
+}
